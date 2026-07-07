@@ -73,8 +73,8 @@ npx http-server
 ## 🔐 Demo Credentials
 
 ### Admin User
-- **Email:** `admin@laundry.com`
-- **Password:** `admin123`
+- **Email:** `bandardeterjen@gmail.com`
+- **Password:** `pengentahuaja`
 - **Akses:** Admin Panel + CRUD operations
 
 ### Regular User
