@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry FAQ - Basis Pengetahuan Perawatan Pakaian</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header sticky">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23D97706' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='60' font-size='40' font-weight='bold' fill='white' text-anchor='middle'%3ELF%3C/text%3E%3C/svg%3E" alt="Logo" class="logo">
+                    <div>
+                        <h1 class="logo-title">Laundry FAQ</h1>
+                        <p class="logo-subtitle">Basis Pengetahuan Perawatan Pakaian</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <span class="eco-badge">🌿 Ramah Lingkungan</span>
+                    <div class="auth-section" id="authSection">
+                        <button class="btn btn-primary" onclick="window.location.href='login.html'">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h2 class="hero-title">Panduan Lengkap Perawatan Pakaian</h2>
+                    <p class="hero-description">Temukan jawaban untuk semua pertanyaan tentang laundry, cara menghilangkan noda, memahami simbol pakaian, dan praktik ramah lingkungan.</p>
+                    <button class="btn btn-primary btn-large" onclick="document.getElementById('search-section').scrollIntoView({behavior: 'smooth'})">Mulai Jelajahi</button>
+                </div>
+                <div class="hero-image">
+                    <div class="placeholder-image">🧺 Laundry Care</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search & Filter Section -->
+    <section id="search-section" class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Cari pertanyaan atau topik..." class="search-input">
+                <span class="search-icon">🔍</span>
+            </div>
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all" onclick="filterByCategory('all')">Semua</button>
+                <button class="filter-btn" data-category="general" onclick="filterByCategory('general')">📋 Umum</button>
+                <button class="filter-btn" data-category="stains" onclick="filterByCategory('stains')">🧹 Menghilangkan Noda</button>
+                <button class="filter-btn" data-category="symbols" onclick="filterByCategory('symbols')">🏷️ Simbol Laundry</button>
+                <button class="filter-btn" data-category="care" onclick="filterByCategory('care')">👕 Perawatan Pakaian</button>
+                <button class="filter-btn" data-category="eco" onclick="filterByCategory('eco')">🌱 Ramah Lingkungan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div id="faqContainer" class="faq-container">
+                <!-- FAQ items will be inserted here by JavaScript -->
+            </div>
+            <div class="results-counter">
+                <p>Menampilkan <span id="resultCount">0</span> dari <span id="totalCount">0</span> pertanyaan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Laundry FAQ</h4>
+                    <p>Basis pengetahuan lengkap untuk perawatan pakaian yang tepat dan berkelanjutan.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Kategori</h5>
+                    <ul id="footerCategories">
+                        <!-- Categories will be inserted here -->
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Tentang</h5>
+                    <p>Laundry FAQ menyediakan panduan praktis dan terpercaya untuk semua kebutuhan perawatan pakaian Anda.</p>
+                    <p class="copyright">© 2026 Laundry FAQ. Semua hak dilindungi.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
